@@ -38,6 +38,7 @@ header {
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
     height: calc(100vh - 60px); /* Adjust height */
+    padding-top: 60px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 9;
     box-sizing: border-box;
@@ -47,14 +48,20 @@ header {
     transform: translateX(0);
 }
 
+.drawer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.drawer ul li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
 
-
-
-.drawer  li, a {
+.drawer ul li a {
+    color: white;
     text-decoration: none;
-    color: inherit;
-    margin-top:20px;
 }
 
 /* Poster Styles */
@@ -227,3 +234,93 @@ footer {
 } */
 
 
+
+@media (max-width: 600px) {
+    .navbar {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+            justify-content: space-between; /* Ensure items stay apart */
+            align-items: center;
+            padding: 0 10px;
+            background-color: black;
+    }
+
+    .poster {
+        margin-top: 35px;
+    }
+
+    .video-container {
+        margin-top: 60px;
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack the columns vertically */
+        align-items: flex-start; /* Align columns to start to prevent stretching */
+        gap: 10px; /* Reduced space between columns */
+    }
+
+    .footer-column {
+        flex: 1 1 auto; /* Allow columns to take up only the space needed for their content */
+        margin: 0; /* Remove margin to minimize space */
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        position: fixed;
+        top:0px;
+        height:fit-content ;
+    }
+
+    .poster {
+        margin-top: 35px;
+    }
+
+    .video-container {
+        margin-top: 60px;
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack the columns vertically */
+        align-items: flex-start; /* Align columns to start to prevent stretching */
+        gap: 10px; /* Reduced space between columns */
+    }
+
+    .footer-column {
+        flex: 1 1 auto; /* Allow columns to take up only the space needed for their content */
+        margin: 0; /* Remove margin to minimize space */
+    }
+}
+
+@media (max-width: 915px) {
+    
+    .drawer{
+        position:fixed;
+        top: 0px;
+        padding-top: 120px;
+        height:100%;
+    }
+    .navbar {
+        height: fit-content;
+    }
+
+    .poster {
+        margin-top: 35px;
+    }
+
+    .video-container {
+        margin-top: 60px;
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack the columns vertically */
+        align-items: flex-start; /* Align columns to start to prevent stretching */
+        gap: 15px; /* Adjusted space between columns */
+    }
+
+    .footer-column {
+        flex: 1 1 auto; /* Allow columns to take up only the space needed for their content */
+        margin: 0; /* Remove margin to minimize space */
+    }
+}

@@ -251,6 +251,7 @@ header {
         #welcomepara {
             margin: 0;
             padding: 0;
+            font-size: 12px;
             color: white;
             text-align: left;
             flex-grow: 1; /* Take up remaining space */
@@ -286,6 +287,7 @@ header {
         #welcomepara {
             margin: 0;
             padding: 0;
+            font-size: 12px;
             color: white;
             text-align: left;
             flex-grow: 1; /* Take up remaining space */
@@ -330,6 +332,7 @@ header {
         #welcomepara {
             margin: 0;
             padding: 0;
+            font-size: 12px;
             color: white;
             text-align: left;
             flex-grow: 1; /* Take up remaining space */
@@ -374,6 +377,7 @@ header {
         #welcomepara {
             margin: 0;
             padding: 0;
+            font-size: 12px;
             color: white;
             text-align: left;
             flex-grow: 1; /* Take up remaining space */
