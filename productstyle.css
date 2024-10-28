@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar{
+    
+   display: flex; 
+   align-items: center;
+   background-color:black;
+   height: 60px;
+   border: 1px solid black;
+   margin-top:1px ;
+   position: fixed;
+   width: 100%;
+   top: 0px;
+   z-index: 1;
+}
+
+.drawer{
+   
+    background-color: red;
+    height: fit-content;
+    position: fixed;
+    left: -250px; /* Start hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #444;
+    color: white;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    
+}
+
+.drawer a,li{
+    text-decoration: none;
+    color: inherit;
+    margin-top:20px;
+}
+
+
+.drawer.open {
+    left: 0; /* Slide in when open */
+}
+
+.open-btn{
+    margin-left: 5px;
+    z-index: 3;
+    
+}
+
+#welcomepara{
+    position: fixed;
+    right: 0px;
+}
+
+
+
+
+.productsection{
+    
+    height: 400px;
+    background-color: beige;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 2px solid rgb(235, 219, 182);
+    border-radius: 3px;
+    
+}
+
+#foodandvegy{
+    margin-top: 70px;
+}
+
+.productbox{
+    height:80%;
+    background-color: rgb(235, 219, 182) ;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(12, 12, 11);
+    border: 3px;
+}
+
+.productpic{
+
+        width:20%;
+        height: 80% ;
+        background-color: burlywood;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+}
+
+.innervegyprd{
+
+    height: 80%;
+    width: 80%;
+    background-color: brown;
+
+}
+
+#vegy1{
+    background-image: url('spinach.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vegy2{
+
+    background-image: url('milk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vegy3{
+
+    background-image: url('methi.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vegy4{
+
+    background-image: url('garlic.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.innerfruitprd{
+    height: 80%;
+    width: 80%;
+    background-color: brown;
+}
+
+#fruit1{
+
+    background-image: url('ramphal.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+#fruit2{
+
+    background-image: url('mango.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+#fruit3{
+
+    background-image: url('sitaphal.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+#fruit4{
+
+    background-image: url('peru.webp');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+
+.innerstationaryprd{
+
+    height: 80%;
+    width: 80%;
+    background-color: brown;
+
+}
+
+#stationary1{
+
+    background-image: url('books.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#stationary2{
+
+    background-image: url('notebook.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+#stationary3{
+
+    background-image: url('pencils.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#stationary4{
+
+    background-image: url('pens.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+.productsectionhead{
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.stationarypara{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.fruitpara{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.vegypara{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}

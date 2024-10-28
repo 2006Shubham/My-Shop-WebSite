@@ -1,0 +1,126 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar{
+    
+   display: flex; 
+   align-items: center;
+   background-color:black;
+   height: 60px;
+   border: 1px solid black;
+   margin-top:1px ;
+   position: fixed;
+   width: 100%;
+   top: 0px;
+   z-index: 1;
+}
+
+.drawer{
+   
+    background-color: red;
+    height: fit-content;
+    position: fixed;
+    left: -250px; /* Start hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #444;
+    color: white;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    
+}
+
+.drawer a,li{
+    text-decoration: none;
+    color: inherit;
+    margin-top:20px;
+}
+
+
+.drawer.open {
+    left: 0; /* Slide in when open */
+}
+
+.open-btn{
+    margin-left: 5px;
+    z-index: 3;
+    
+}
+
+#welcomepara{
+    position: fixed;
+    right: 0px;
+}
+
+
+
+
+.partner{
+
+    height: calc(100vh/2);
+    background-color: aqua;
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.partners{
+
+    width:calc(100vw/2);
+    height: 100%;
+    background-color: pink;
+    margin-right: 2px;
+
+}
+
+#jiopartner{
+    background-image: url('jioposter.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#airtelpartner{
+
+    background-image: url('airtelposter.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#vipartner{
+
+    
+    background-image: url('viposter.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#bsnlpartner{
+
+    
+    background-image: url('bsnlposter.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#partner1{
+    margin-top: 45px;
+}

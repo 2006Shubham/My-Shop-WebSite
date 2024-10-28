@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Shop - Home</title>
+    <link href="homestyle.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <div class="poster">
+           
+        </div>
+
+        <nav class="navbar">
+            <button class="open-btn" onclick="toggleDrawer()">☰ Menu</button>
+            <p id="welcomepara">Welcome to DGT Service</p>
+        </nav>
+
+        <div class="drawer" id="drawer">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="newoffer.html">New Offer</a></li>
+                <li><a href="product.html">Products</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="homebody">
+        <div class="video-container">
+            <video controls>
+                <source src="homevidio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Your shop's brief description goes here. Mention what services or products you offer.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@yourshop.com</p>
+                <p>Phone: +123-456-7890</p>
+                <p>Address: 123 Your Street, Your City</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Shop Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="homejs.js"></script>
 </body>
 </html>
