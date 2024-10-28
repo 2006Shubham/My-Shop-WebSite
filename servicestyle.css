@@ -226,3 +226,195 @@ header {
     background-repeat: no-repeat;
 
 }
+
+
+@media(max-width:415px){
+    
+    .servicecontainer{
+        flex-direction: column;
+    }
+
+    .service{
+        margin-top: 50px;
+    }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Ensure items stay apart */
+            align-items: center;
+            padding: 0 10px;
+            background-color: black;
+        }
+    
+        .open-btn {
+            margin: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+    
+        #welcomepara {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            color: white;
+            text-align: left;
+            flex-grow: 1; /* Take up remaining space */
+            margin-left: 100px; /* Ensure space between the button and text */
+            white-space: wrap; /* Prevent text wrapping */
+            overflow: hidden; /* Hide overflow if text is too long */
+            text-overflow: ellipsis; /* Show "..." if the text is too long */
+        }
+    
+}
+
+
+@media(max-width:600px){
+    .servicecontainer{
+        flex-direction: column;
+    }
+
+    .service{
+        margin-top: 50px;
+
+    }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Ensure items stay apart */
+            align-items: center;
+            padding: 0 10px;
+            background-color: black;
+        }
+    
+        .open-btn {
+            margin: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+    
+        #welcomepara {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            color: white;
+            text-align: left;
+            flex-grow: 1; /* Take up remaining space */
+            margin-left: 100px; /* Ensure space between the button and text */
+            white-space: wrap; /* Prevent text wrapping */
+            overflow: hidden; /* Hide overflow if text is too long */
+            text-overflow: ellipsis; /* Show "..." if the text is too long */
+        }
+    
+}
+
+
+@media(min-width:1022px){
+    .servicecontainer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; 
+
+    }
+
+    .service{
+        margin-top: 50px;
+        flex: 0 0 calc(50% - 10px); /* 50% width for 2 items per row, minus the gap space */
+        box-sizing: border-box;
+        background-color: #f2f2f2; /* Just for visual reference */
+        padding: 20px;
+        text-align: center;
+        
+
+    }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Ensure items stay apart */
+            align-items: center;
+            padding: 0 10px;
+            background-color: black;
+        }
+    
+        .open-btn {
+            margin: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+    
+        #welcomepara {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            color: white;
+            text-align: left;
+            flex-grow: 1; /* Take up remaining space */
+            margin-left: 100px; /* Ensure space between the button and text */
+            white-space: wrap; /* Prevent text wrapping */
+            overflow: hidden; /* Hide overflow if text is too long */
+            text-overflow: ellipsis; /* Show "..." if the text is too long */
+        }
+    
+}
+
+
+@media(min-width:760px){
+    .servicecontainer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; 
+
+    }
+
+    .service{
+        margin-top: 50px;
+        flex: 0 0 calc(50% - 10px); /* 50% width for 2 items per row, minus the gap space */
+        box-sizing: border-box;
+        background-color: #f2f2f2; /* Just for visual reference */
+        padding: 20px;
+        text-align: center;
+        
+
+    }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Ensure items stay apart */
+            align-items: center;
+            padding: 0 10px;
+            background-color: black;
+        }
+    
+        .open-btn {
+            margin: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+    
+        #welcomepara {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            color: white;
+            text-align: left;
+            flex-grow: 1; /* Take up remaining space */
+            margin-left: 100px; /* Ensure space between the button and text */
+            white-space: wrap; /* Prevent text wrapping */
+            overflow: hidden; /* Hide overflow if text is too long */
+            text-overflow: ellipsis; /* Show "..." if the text is too long */
+        }
+    
+}
+
+
+
+
+
+

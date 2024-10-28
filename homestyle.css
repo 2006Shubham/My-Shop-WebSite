@@ -226,9 +226,15 @@ footer {
 } */
 
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     .navbar {
         height: fit-content;
+        display: flex;
+        flex-direction: row;
+            justify-content: space-between; /* Ensure items stay apart */
+            align-items: center;
+            padding: 0 10px;
+            background-color: black;
     }
 
     .poster {
@@ -283,6 +289,8 @@ footer {
     .drawer{
         position:fixed;
         top: 0px;
+        padding-top: 120px;
+        height:100%;
     }
     .navbar {
         height: fit-content;
@@ -307,5 +315,3 @@ footer {
         margin: 0; /* Remove margin to minimize space */
     }
 }
-
-
