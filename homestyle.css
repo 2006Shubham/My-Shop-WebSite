@@ -198,6 +198,14 @@ footer {
     box-sizing: border-box;
 }
 
+
+
+.open-btn{
+    margin-left: 5px;
+    z-index: 3;
+}
+
+
 /* @media (max-width:360px){
 
     .navbar{
@@ -219,92 +227,3 @@ footer {
 } */
 
 
-@media (max-width: 600px) {
-    .navbar {
-        height: fit-content;
-        display: flex;
-        flex-direction: row;
-            justify-content: space-between; /* Ensure items stay apart */
-            align-items: center;
-            padding: 0 10px;
-            background-color: black;
-    }
-
-    .poster {
-        margin-top: 35px;
-    }
-
-    .video-container {
-        margin-top: 60px;
-    }
-
-    .footer-container {
-        flex-direction: column; /* Stack the columns vertically */
-        align-items: flex-start; /* Align columns to start to prevent stretching */
-        gap: 10px; /* Reduced space between columns */
-    }
-
-    .footer-column {
-        flex: 1 1 auto; /* Allow columns to take up only the space needed for their content */
-        margin: 0; /* Remove margin to minimize space */
-    }
-}
-
-@media (max-width: 600px) {
-    .navbar {
-        position: fixed;
-        top:0px;
-        height:fit-content ;
-    }
-
-    .poster {
-        margin-top: 35px;
-    }
-
-    .video-container {
-        margin-top: 60px;
-    }
-
-    .footer-container {
-        flex-direction: column; /* Stack the columns vertically */
-        align-items: flex-start; /* Align columns to start to prevent stretching */
-        gap: 10px; /* Reduced space between columns */
-    }
-
-    .footer-column {
-        flex: 1 1 auto; /* Allow columns to take up only the space needed for their content */
-        margin: 0; /* Remove margin to minimize space */
-    }
-}
-
-@media (max-width: 915px) {
-    
-    .drawer{
-        position:fixed;
-        top: 0px;
-        padding-top: 60px;
-        height:100%;
-    }
-    .navbar {
-        height: fit-content;
-    }
-
-    .poster {
-        margin-top: 35px;
-    }
-
-    .video-container {
-        margin-top: 60px;
-    }
-
-    .footer-container {
-        flex-direction: column; /* Stack the columns vertically */
-        align-items: flex-start; /* Align columns to start to prevent stretching */
-        gap: 15px; /* Adjusted space between columns */
-    }
-
-    .footer-column {
-        flex: 1 1 auto; /* Allow columns to take up only the space needed for their content */
-        margin: 0; /* Remove margin to minimize space */
-    }
-}

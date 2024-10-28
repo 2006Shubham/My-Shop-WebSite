@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: rgb(105, 103, 103);
+    background-color: burlywood;
     
 }
 
@@ -60,7 +60,6 @@ header {
 .open-btn{
     margin-left: 5px;
     z-index: 3;
-    
 }
 
 #welcomepara{
