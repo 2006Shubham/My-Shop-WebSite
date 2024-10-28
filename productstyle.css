@@ -42,7 +42,9 @@ header {
 .drawer a,li{
     text-decoration: none;
     color: inherit;
-    margin-top:20px;
+    margin-top:10px;
+    padding: 0px;
+
 }
 
 
@@ -64,49 +66,11 @@ header {
 
 
 
-.productsection{
-    
-    height: 400px;
-    background-color: beige;
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 2px;
-    margin-right: 2px;
-    border: 2px solid rgb(235, 219, 182);
-    border-radius: 3px;
-    
-}
 
 #foodandvegy{
     margin-top: 70px;
 }
 
-.productbox{
-    height:80%;
-    background-color: rgb(235, 219, 182) ;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid rgb(12, 12, 11);
-    border: 3px;
-}
-
-.productpic{
-
-        width:20%;
-        height: 80% ;
-        background-color: burlywood;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 20px;
-        border: 1px solid black;
-        border-radius: 5px;
-}
 
 .innervegyprd{
 
@@ -241,3 +205,190 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
+.status{
+    text-align: center;
+    margin-top:20px ;
+    display: inline;
+}
+
+
+
+
+:root {
+    --primary-color: #444;
+    --secondary-color: beige;
+    --accent-color: burlywood;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.status{
+    text-align: center;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex; 
+    align-items: center;
+    background-color: black;
+    height: 60px;
+    border: 1px solid black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.drawer {
+    position: fixed;
+    left: -300px; 
+    width: 250px;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+}
+
+.drawer.open {
+    left: 0; 
+}
+
+.drawer a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Make links block-level for better click area */
+    padding: 10px;
+}
+
+.productsection {
+    background-color: var(--secondary-color);
+    margin: 70px 2px; /* Adjust top margin for fixed navbar */
+    border: 2px solid rgb(235, 219, 182);
+    border-radius: 3px;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.productbox {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.productpic {
+    flex: 1 1 20%; /* Flexible basis, grow and shrink */
+    min-width: 150px; /* Minimum width for product pictures */
+    max-width: 300px; /* Maximum width for product pictures */
+    background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /* Add margin for spacing */
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 300px; /* Set a fixed height for visibility */
+}
+
+.innervegyprd,
+.innerfruitprd,
+.innerstationaryprd {
+    height: 80%; /* Inner product display height */
+    width: 80%;
+    background-color: brown; /* Background color for visibility */
+}
+
+.productsectionhead {
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Stack navbar items vertically on smaller screens */
+    }
+
+    .productpic {
+        flex: 1 1 45%; /* Make items wider on smaller screens */
+        max-width: none; /* Remove max-width on smaller screens */
+    }
+
+    .drawer {
+        width: 70%; /* Increase drawer width on mobile */
+       
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between; /* Ensure items stay apart */
+        align-items: center;
+        padding: 0 10px;
+        background-color: black;
+    }
+
+    #welcomepara {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        color: white;
+        text-align: left;
+        flex-grow: 1; /* Take up remaining space */
+        margin-left: 100px; /* Ensure space between the button and text */
+        white-space: wrap; /* Prevent text wrapping */
+        overflow: hidden; /* Hide overflow if text is too long */
+        text-overflow: ellipsis; /* Show "..." if the text is too long */
+    }
+}
+
+@media (max-width: 480px) {
+    .productpic {
+        flex: 1 1 90%; /* Make items take almost full width on very small screens */
+    }
+
+    #welcomepara {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+
+    .status {
+        font-size: 12px; /* Smaller status text */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between; /* Ensure items stay apart */
+        align-items: center;
+        flex-direction: row;
+        padding: 0 10px;
+        background-color: black;
+    }
+
+    #welcomepara {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        color: white;
+        text-align: left;
+        flex-grow: 1; /* Take up remaining space */
+        margin-left: 100px; /* Ensure space between the button and text */
+        white-space: wrap; /* Prevent text wrapping */
+        overflow: hidden; /* Hide overflow if text is too long */
+        text-overflow: ellipsis; /* Show "..." if the text is too long */
+    }
+}
+
+
+
