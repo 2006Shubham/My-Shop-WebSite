@@ -124,3 +124,45 @@ header {
 #partner1{
     margin-top: 45px;
 }
+
+@media (max-width:1020px){
+    .partner{
+            flex-direction: column;
+
+    }
+    .partners{
+        width: 100%;
+        margin: 5px;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+            justify-content: space-between; /* Ensure items stay apart */
+            align-items: center;
+            padding: 0 10px;
+            background-color: black;
+    }
+
+    #welcomepara {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        color: white;
+        text-align: left;
+        flex-grow: 1; /* Take up remaining space */
+        margin-left: 100px; /* Ensure space between the button and text */
+        white-space: wrap; /* Prevent text wrapping */
+        overflow: hidden; /* Hide overflow if text is too long */
+        text-overflow: ellipsis; /* Show "..." if the text is too long */
+    }
+
+
+}
+
+@media (min-width:230px)
+{
+    .partners{
+        background-size: cover;
+    }
+}
