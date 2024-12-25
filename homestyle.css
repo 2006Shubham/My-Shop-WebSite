@@ -5,63 +5,62 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
-
 header {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
+    background-color: white;
     color: white;
-    height: 60px;
-    padding: 0 20px;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 10;
-    position: fixed;
-    top: 0; /* Fixed at the top */
+    padding: 10px 0;
 }
 
-/* Drawer Styles */
-.drawer {
+#welcomepara{
     position: fixed;
-    top: 60px; /* Align with navbar height */
-    left: 0;
+    right: 0px;
+}
+
+.navbar{
+    
+   display: flex; 
+   align-items: center;
+   background-color:black;
+   height: 60px;
+   border: 1px solid black;
+   margin-top:1px ;
+   position: fixed;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+   z-index: 1;
+}
+
+.drawer{
+   
+    background-color: red;
+    height: fit-content;
+    position: fixed;
+    left: -250px; /* Start hidden off-screen */
     width: 250px;
+    height: 100%;
     background-color: #444;
     color: white;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-    height: calc(100vh - 60px); /* Adjust height */
+    transition: left 0.3s ease;
     padding-top: 60px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    z-index: 9;
-    box-sizing: border-box;
+    top: 0px;
+    
 }
+
+.drawer a,li{
+    text-decoration: none;
+    color: inherit;
+    margin-top:20px;
+}
+
 
 .drawer.open {
-    transform: translateX(0);
+    left: 0; /* Slide in when open */
 }
 
-.drawer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.drawer ul li {
-    padding: 10px;
-    border-bottom: 1px solid #555;
-}
-
-.drawer ul li a {
-    color: white;
-    text-decoration: none;
+.open-btn{
+    margin-left: 5px;
+    z-index: 3;
 }
 
 /* Poster Styles */
