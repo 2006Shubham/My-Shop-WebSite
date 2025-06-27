@@ -1,0 +1,71 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+/* Video Container */
+.video-container {
+    max-width: 90%; /* Decreased width */
+    height: auto; /* Let it scale based on content */
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Center align */
+    margin-top: 50px;
+    
+    
+}
+
+.video-container video {
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Limit video width */
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    
+
+    .video-container {
+        margin: 20px 10px;
+    }
+
+    
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    
+    .video-container {
+        margin-top: 60px;
+    }
+
+   
+}
+
+@media (max-width: 600px) {
+    
+    .video-container {
+        margin-top: 60px;
+    }
+
+  
+}
+
+@media (max-width: 915px) {
+    
+   
+    
+    .video-container {
+        margin-top: 60px;
+    }
+
+  
+}
+
+

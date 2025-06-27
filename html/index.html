@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shop - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/homestyle.css">
+</head>
+
+<body>
+
+
+    <header class="w-full bg-white">
+
+        <div class="w-full">
+            <img src="/images/banner.png" alt="Banner" class="w-full object-contain">
+        </div>
+
+
+    </header>
+
+    <!-- ✅ Sticky Navbar -->
+    <nav class="sticky top-0 w-full  bg-gray-200 shadow-md z-50">
+        <ul class="flex flex-wrap justify-center gap-4 py-3 text-lg font-semibold sm:gap-8 sm:py-4">
+            <li><a href="index.html" class="nav-anchor hover:text-purple-600">Home</a></li>
+
+            <li><a href="#home" class="nav-anchor hover:text-purple-600">Service</a></li>
+            <li><a href="partners.html" class="nav-anchor hover:text-purple-600">Partners</a></li>
+            <li><a href="newoffer.html" class="nav-anchor hover:text-purple-600">New Offer</a></li>
+            <li><a href="product.html" class="nav-anchor hover:text-purple-600">Products</a></li>
+        </ul>
+    </nav>
+
+    <!-- ✅ Main Content -->
+    <main>
+        <section id="#home">
+            <div class="flex flex-col md:flex-row gap-10 md:gap-20 p-5 md:p-20 items-center">
+                <img src="/images/mypic.jpg" alt="my photo" class="w-40 sm:w-52 md:w-64 rounded-[20%]">
+                <div class="name-tagline flex flex-col gap-6 text-center sm:text-left">
+                    <h1 class="Santosh Sahebrao Deshmukh font-black text-3xl sm:text-3xl md:text-5xl text-purple-500">
+                        <span class="">Santosh Sahebrao Deshmukh</span><br>
+                    </h1>
+                    <p class="italic text-[white] bg-orange-400 sm:text-white sm:font-medium sm:text-base">
+                        Owner
+                    </p>
+                </div>
+
+            </div>
+
+
+
+            <div class="video-container">
+                <video controls>
+                    <source src="/audio/homevidio.mp4" type="video/mp4">
+                    <video controls muted autoplay loop>
+                        <source src="/audio/homevidio.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+            </div>
+            </div>
+
+    </main>
+
+    </section>
+
+
+
+    <section id="services" class="p-16">
+        <h1 class="text-[35px]">Our Services</h1>
+
+        <div class="w-full bg-pink-400 grid grid-cols-3 gap-10 p-10">
+
+            <div class="flex gap-4 ju  ju">
+                <img src="/images/recharge.jpeg" class="w-16 rounded-full">
+                <p>Mobile, DTH Recharge</p>
+
+            </div>
+
+
+            <div class="flex gap-4 ju">
+                <img src="/images/recharge.jpeg" class="w-16 rounded-full">
+                <p>SIMX - Sim Exchange(get lost sim) </p>
+            </div>
+
+             <div class="flex gap-4 ju">
+                <img src="/images/recharge.jpeg" class="w-16 rounded-full">
+                <p>Mobile, DTH Recharge</p>
+            </div>
+
+             <div class="flex gap-4 ju">
+                <img src="/images/recharge.jpeg" class="w-16 rounded-full">
+                <p>Mobile, DTH Recharge</p>
+            </div>
+
+             <div class="flex gap-4 justify-center items-center">
+                <img src="/images/recharge.jpeg" class="w-16 rounded-full">
+                <p>Mobile, DTH Recharge</p>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+
+            let navanchor = document.querySelectorAll(".nav-anchor");
+
+            console.log(navanchor);
+            if (window.scrollY > 320) {
+                nav.classList.add('shadow-lg', 'bg-[#E6DEE0]');
+                navanchor.forEach(element => {
+                    element.classList.add('text-orange-400', 'font-black');
+                });
+
+            } else {
+                nav.classList.remove('shadow-lg', 'bg-[#E6DEE0]');
+                navanchor.forEach(element => {
+                    element.classList.remove('text-orange-400', 'font-black');
+                });
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

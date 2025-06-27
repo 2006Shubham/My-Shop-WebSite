@@ -1,0 +1,184 @@
+
+
+
+.servicecontainer{
+   
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    
+}
+
+.service{
+    
+    width: 300px;
+    background-color: white;
+   
+    border: 2px solid black;
+
+}
+
+.innerservice{
+    height: 200px;
+    background-color: black;
+    
+}
+
+.company{
+    height: 40px;
+    width: 40px;
+    background-color:brown;
+}
+
+#airtel{
+    background-image: url('airtel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#vi{
+    background-image: url('vi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jio{
+    background-image: url('jio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bsnl{
+
+    background-image: url('bsnl.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#zing{
+    background-image: url('zing.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#vidiocon{
+    background-image: url('vidiocon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#tatasky{
+    background-image: url('tatasky.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#dishtv{
+    background-image: url('dishtv.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+
+/* last kirana serive container */
+
+#oil{
+
+    background-image: url('g3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#salt{
+    background-image: url('g4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#snack{
+
+    background-image: url('sn1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#snack2{
+    background-image: url('sn3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#toast{
+    background-image: url('TOAST.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#corn{
+
+    background-image: url('sn8.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#biscuit{
+        
+    background-image: url('biscuit.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rice{
+
+    background-image: url('rice.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+@media(max-width:415px){
+    
+    
+
+    .service{
+        margin-top: 50px;
+    }
+
+        
+    
+        
+    
+       
+}
+
+
+@media(max-width:600px){
+   
+    .service{
+        margin-top: 50px;
+
+    }
+
+       
+}
+
+
