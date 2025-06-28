@@ -33,7 +33,25 @@
                 opacity: 0.4;
             }
         }
-    </style>
+
+         @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-slide {
+    animation: slide 25s linear infinite;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }    
+  </style>
 
 </head>
 
@@ -80,11 +98,11 @@
 
 
             <div class="video-container border-purple-2px">
-                
-                    <video controls muted autoplay loop>
-                        <source src="/audio/homevidio.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+
+                <video controls muted autoplay loop>
+                    <source src="/audio/homevidio.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             </div>
 
@@ -92,18 +110,19 @@
 
     </section>
 
-    <section id="services" class=" p-2 pt-4 md:p-16 md:pt-0">
+    <section id="services" class="p-2 pt-4 md:p-16 md:pt-0">
 
-        
-    <marquee class="mt-20 bg-orange-400 text-white font-black p-2">
-        <span class="flicker">|| Get out through our Services !! Look !! Judge !! Buy ||</span>
-        <span class="flicker ml-6">|| Get out through our Services !! Look !! Judge !! Buy ||</span>
-        <span class="flicker ml-6">|| Get out through our Services !! Look !! Judge !! Buy ||</span>
-    </marquee>
+
+        <marquee class="mt-20 bg-orange-400 text-white font-black p-2">
+            <span class="flicker">|| Get out through our Services !! Look !! Judge !! Buy ||</span>
+            <span class="flicker ml-6">|| Get out through our Services !! Look !! Judge !! Buy ||</span>
+            <span class="flicker ml-6">|| Get out through our Services !! Look !! Judge !! Buy ||</span>
+        </marquee>
 
         <h1 class="pl-5 text-[35px] md:pl-10 md:text-[35px] pt-12">Our Services</h1>
 
-        <div class="w-full  grid grid-cols-1 gap-6 p-5  md:w-full md:grid md:grid-cols-3 md:gap-10 md:p-10 text-orange-400 font-semibold">
+        <div
+            class="w-full  grid grid-cols-1 gap-6 p-5  md:w-full md:grid md:grid-cols-3 md:gap-10 md:p-10 text-orange-400 font-semibold">
 
             <div class="flex flex-col bg-white border-[2px] justify-center items-center gap-10 py-10 px-2">
                 <img src="/images/recharge.jpeg" class="w-30 rounded-full">
@@ -147,6 +166,43 @@
 
 
     </section>
+
+
+
+<section id="partners" class="bg-white py-8 overflow-hidden px-4 md:px-24">
+  <h2 class="text-center text-2xl font-bold text-purple-600 mb-6">Our Partners</h2>
+
+  <div class="relative overflow-x-auto scrollbar-hide">
+    <div class="flex animate-slide gap-6 whitespace-nowrap">
+
+      <!-- Airtel -->
+      <div class="w-32 sm:w-40 md:w-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+        <img src="/images/airtel.png" alt="Airtel" class="h-16 w-auto object-contain" />
+      </div>
+
+      <!-- Jio -->
+      <div class="w-32 sm:w-40 md:w-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+        <img src="/images/jio.png" alt="Jio" class="h-16 w-auto object-contain" />
+      </div>
+
+      <!-- BSNL -->
+      <div class="w-32 sm:w-40 md:w-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+        <img src="/images/bsnl.png" alt="BSNL" class="h-16 w-auto object-contain" />
+      </div>
+
+      <!-- VI -->
+      <div class="w-32 sm:w-40 md:w-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+        <img src="/images/vi.png" alt="Vodafone" class="h-16 w-auto object-contain" />
+      </div>
+
+      <!-- Duplicate for smooth loop -->
+      <div class="w-32 sm:w-40 md:w-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+        <img src="/images/airtel.png" alt="Airtel" class="h-16 w-auto object-contain" />
+      </div>
+      <!-- ...repeat more if needed -->
+    </div>
+  </div>
+</section>
 
 
 
