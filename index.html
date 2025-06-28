@@ -34,24 +34,29 @@
             }
         }
 
-         @keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
 
-  .animate-slide {
-    animation: slide 25s linear infinite;
-  }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
+        .animate-slide {
+            animation: slide 25s linear infinite;
+        }
 
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }    
-  </style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
 
 </head>
 
@@ -73,9 +78,8 @@
             <li><a href="index.html" class="nav-anchor hover:text-purple-600">Home</a></li>
 
             <li><a href="#services" class="nav-anchor hover:text-purple-600">Service</a></li>
-            <li><a href="" class="nav-anchor hover:text-purple-600">Partners</a></li>
-            <li><a href="newoffer.html" class="nav-anchor hover:text-purple-600">New Offer</a></li>
-            <li><a href="product.html" class="nav-anchor hover:text-purple-600">Products</a></li>
+            <li><a href="#partners" class="nav-anchor hover:text-purple-600">Partners</a></li>
+            <li><a href="#contact" class="nav-anchor hover:text-purple-600">Contact</a></li>
         </ul>
     </nav>
 
@@ -169,41 +173,169 @@
 
 
 
-<section id="partners" class="bg-white py-8 overflow-hidden px-4 md:px-24">
-  <h2 class="text-center text-2xl font-bold text-purple-600 mb-6">Our Partners</h2>
+    <section id="partners" class="bg-white  overflow-hidden px-4 md:px-24">
 
-  <div class="relative overflow-x-auto scrollbar-hide">
-    <div class="flex animate-slide gap-6 whitespace-nowrap">
+        <marquee class="mt-20 bg-yellow-400 text-purple-800 font-black p-2">
+            <span class="flicker">|| 7+ Years of Trustworthy Partnership with India's Leading Telecom Giants ||</span>
+            <span class="flicker ml-6">|| We Power Digital Connectivity with Airtel, Jio, Vi, BSNL & More ||</span>
+            <span class="flicker ml-6">|| Reliable Service – Trusted Brands – Seamless Integration ||</span>
+        </marquee>
 
-      <!-- Airtel -->
-      <div class="w-32 sm:w-40 md:w-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
-        <img src="/images/airtel.png" alt="Airtel" class="h-16 w-auto object-contain" />
-      </div>
 
-      <!-- Jio -->
-      <div class="w-32 sm:w-40 md:w-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
-        <img src="/images/jio.png" alt="Jio" class="h-16 w-auto object-contain" />
-      </div>
+        <h1 class="pl-5 text-[35px] md:pl-4 md:text-[35px] pt-12">Our Partners</h1>
 
-      <!-- BSNL -->
-      <div class="w-32 sm:w-40 md:w-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
-        <img src="/images/bsnl.png" alt="BSNL" class="h-16 w-auto object-contain" />
-      </div>
+        <div class="relative overflow-x-auto scrollbar-hide pt-10"> <!-- Hide scrollbar -->
+            <div class="flex gap-6 whitespace-nowrap animate-slide">
 
-      <!-- VI -->
-      <div class="w-32 sm:w-40 md:w-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
-        <img src="/images/vi.png" alt="Vodafone" class="h-16 w-auto object-contain" />
-      </div>
+                <!-- Airtel -->
+                <div
+                    class="w-64 sm:w-64 md:w-64 h-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+                    <img src="/images/airtel.png" alt="Airtel" class="h-32 w-auto object-contain" />
+                </div>
 
-      <!-- Duplicate for smooth loop -->
-      <div class="w-32 sm:w-40 md:w-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
-        <img src="/images/airtel.png" alt="Airtel" class="h-16 w-auto object-contain" />
-      </div>
-      <!-- ...repeat more if needed -->
-    </div>
-  </div>
-</section>
+                <!-- Jio -->
+                <div
+                    class="w-64 sm:w-64 md:w-64 h-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+                    <img src="/images/jio.png" alt="Jio" class="h-32 w-auto object-contain" />
+                </div>
 
+                <!-- BSNL -->
+                <div
+                    class="w-64 sm:w-64 md:w-64 h-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+                    <img src="/images/bsnl.png" alt="BSNL" class="h-32 w-auto object-contain" />
+                </div>
+
+                <!-- VI -->
+                <div
+                    class="w-64 sm:w-64 md:w-64 h-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+                    <img src="/images/vi.png" alt="Vodafone Idea" class="h-32 w-auto object-contain" />
+                </div>
+
+                <!-- Duplicates -->
+                <!-- Airtel -->
+                <div
+                    class="w-64 sm:w-64 md:w-64 h-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+                    <img src="/images/airtel.png" alt="Airtel" class="h-32 w-auto object-contain" />
+                </div>
+
+                <!-- Jio -->
+                <div
+                    class="w-64 sm:w-64 md:w-64 h-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+                    <img src="/images/jio.png" alt="Jio" class="h-32 w-auto object-contain" />
+                </div>
+
+                <!-- BSNL -->
+                <div
+                    class="w-64 sm:w-64 md:w-64 h-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+                    <img src="/images/bsnl.png" alt="BSNL" class="h-32 w-auto object-contain" />
+                </div>
+
+                <!-- VI -->
+                <div
+                    class="w-64 sm:w-64 md:w-64 h-48 shrink-0 flex justify-center items-center border-2 rounded bg-white p-2">
+                    <img src="/images/vi.png" alt="Vodafone Idea" class="h-32 w-auto object-contain" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex justify-left items-center">
+            <div>
+                <img src="/images/airtelcup.png" alt="Airtel Cup" class="w-56" />
+            </div>
+
+            <h1 class="text-2xl md:text-5xl">My all time favorite</h1>
+        </div>
+
+        <!-- Description Paragraph -->
+        <p class="text-left text-base sm:text-lg text-gray-700 mt-6 max-w-3xl mx-auto leading-relaxed">
+            पिछले 9 वर्षों से हम भारत की अग्रणी टेलिकॉम कंपनियों के साथ मिलकर काम कर रहे हैं — Airtel, Jio, Vodafone
+            Idea, BSNL और कई अन्य।
+            हमारा उद्देश्य सिर्फ सर्विस देना नहीं, बल्कि पार्टनरशिप में विश्वास और ग्रोथ को साथ लेकर चलना है।
+            चाहे वो डिजिटल रिचार्ज हो, कस्टमर सपोर्ट हो या टेक्निकल इंटीग्रेशन — हमने हर कदम पर क्वालिटी और ट्रस्ट बनाए
+            रखा है।
+        </p>
+
+        <p class="text-left text-base sm:text-lg text-gray-700 mt-4 max-w-3xl mx-auto leading-relaxed">
+            इन वर्षों में हमने न सिर्फ टेक्नोलॉजी को अपनाया है, बल्कि उसे ग्राहकों की ज़रूरतों के हिसाब से ढाला भी है।
+            हमारी टीम ने समय के साथ हर बदलाव को अपनाया और नए इनोवेशन के साथ ग्राहकों को बेहतर अनुभव देने की कोशिश की।
+            यही वजह है कि हमारे पार्टनर्स हम पर भरोसा करते हैं — हर बार, हर स्तर पर।
+        </p>
+
+
+
+
+    </section>
+
+
+        <section id="contacts" class="p-2 pt-4 mt-16 md:pt-0 md:mt-20">
+        <footer id="con-footer" class="bg-[#d4d2d6] pb-4">
+            <div class="p-16 bg-[#d4d2d6] pb-4 sm:p-32 sm:pb-8 sm:bg-[#d4d2d6]">
+                <div class="flex flex-col gap-8 sm:flex sm:flex-row sm:justify-evenly sm:gap-16">
+                    <div class="foot-container flex">
+                        <div class="foot-section">
+                            <h3 class="text-[#CA8A04] font-bold">Get in Touch</h3>
+                            <ul class="foot-list font-medium text-[#c221ed]">
+                                <li><a href="https://x.com/ShubhamDes69814" class="foot-link">X (Twitter)</a></li>
+                                <li><a href="https://www.threads.com/@ssd226008" class="foot-link">Threads</a></li>
+                                <li><a href="https://discord.com/channels/@me" class="foot-link">Discord</a></li>
+                                <li><a href="https://stackoverflow.com/users/25851050/shubham-deshmukh"
+                                        class="foot-link">Stack Overflow</a></li>
+                            </ul>
+                        </div>
+                        <div class="foot-section">
+                            <h3 class="text-[#CA8A04] font-bold">Support</h3>
+                            <ul class="foot-list font-medium text-[#c221ed]">
+                                <li><a href="https://drive.google.com/file/d/1lcUnEv1HMNGyd75V5XwwRHnduvynCYQH/view?usp=sharing"
+                                        class="foot-link ">Terms & Conditions</a></li>
+                                <li><a href="mailto:shubhamdeshmukhs741@gmail.com?subject=Bug Report or Feature Suggestion&body=Hi Shubham,%0D%0A%0D%0AI would like to report an issue or suggest a new feature:%0D%0A%0D%0A[Write your message here]%0D%0A%0D%0ARegards,%0D%0A[Your Name]"
+                                        target="_blank" class="foot-link">Report an Issue / Suggest a Feature</a></li>
+                                <li><a href="https://drive.google.com/file/d/1LusjJgDykas1wmZbV_0NseTXRH0Cpnco/view?usp=sharing"
+                                        class="foot-link">Accessibility Statement</a></li>
+                                <li><a href="https://drive.google.com/file/d/1djnlyBySHTwtzYYxg1Lxnwn6f6uZRV0T/view?usp=sharing"
+                                        class="foot-link">Privacy Statement</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="foot-container flex ">
+                        <div class="foot-section">
+                            <h3 class="text-[#CA8A04] font-bold">Downloads</h3>
+                            <ul class="foot-list font-medium text-[#c221ed]">
+                                <li><a href="#" class="foot-link">Download Resume</a></li>
+                                <li><a href="#" class="foot-link">Download Project Report</a></li>
+                            </ul>
+                        </div>
+                        <div class="foot-section flex flex-col gap-3">
+                            <h3 class="text-[#CA8A04] font-bold">Connect on Socials</h3>
+                            <div id="icon-contain">
+                                <ul class="foot-list flex gap-4">
+                                    <li><a href="https://www.linkedin.com/in/shubham-deshmukh2006/" class="foot-link"><img src="images/linkedin.png" class="w-8"></a>
+                                    </li>
+                                    <li><a href="https://github.com/2006Shubham" class="foot-link"><img
+                                                src="images/github.png" class="w-8"></a></li>
+                                    <li><a href="https://www.instagram.com/ssd226008/" class="foot-link"><img
+                                                src="/images/instagram.png" class="w-8"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <canvas id="riverCanvas" class="w-full h-24 block"></canvas>
+
+            <div
+                class="w-full text-[#FFFFFF] font-semibold bg-[#CA8A04] flex text-center  items-center mt-20 sm:flex sm:justify-center sm:items-center text-[#FFFFFF] font-semibold  sm:mt-20 sm:bg-[#CA8A04] ">
+                <p>© 2025 All Rights Reserved. Made with ❤️ by Shubham Deshmukh</p>
+            </div>
+
+
+
+        </footer>
+
+
+    </section>
 
 
 
