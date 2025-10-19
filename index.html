@@ -87,71 +87,33 @@
 
     <!-- ✅ Main Content -->
     <main>
+
+        <video autoplay loop muted >
+            <source src="/audio/flower.mp4" type="video/mp4">
+        </video>
+
         <section id="home">
+            <div class="relative flex flex-col md:flex-row gap-10 md:gap-20 p-5 md:p-20 items-center overflow-hidden">
 
-            <div class="diwali_home flex flex-col md:flex-row justify-center items-center gap-10 p-5 md:p-10
-            bg-gradient-to-tr from-[#FF6B35] via-[#FFD93D] via-[#FF4E50] to-[#6A0DAD] rounded-xl">
-   
-
-
-                
-                <div
-                    class="relative flex flex-col md:flex-row gap-10 md:gap-20 p-5 md:p-20 items-center overflow-hidden">
-
-                    <!-- Background Video -->
-                    <video autoplay loop muted playsinline
-                        class="absolute top-0 left-0 w-full h-full object-contain z-10">
-                        <source src="/audio/flower.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-
-
-                    <img src="/images/mypic.jpg" alt="my photo"
-                        class="hideen_but_space w-40 sm:w-52 md:w-64 rounded-[20%]">
-
-                    <div class="hideen_but_space name-tagline flex flex-col gap-6 text-center sm:text-left">
-                        <h1 class="font-black text-3xl sm:text-3xl md:text-5xl text-purple-500">
-                            <span>Santosh Sahebrao Deshmukh</span><br>
-                        </h1>
-                        <p class="italic text-white bg-orange-400 sm:text-white sm:font-medium sm:text-base">
-                            Owner
-                        </p>
-                    </div>
-
-
-                </div>
-
-                <div
-                    class="flex flex-row md:flex-col gap-10 md:gap-20 p-5 md:p-20 align-center items-center overflow-hidden">
-
-
-                    <img src="/images/mypic.jpg" alt="my photo"
-                        class="w-40 sm:w-52 md:w-64 rounded-[20%]">
-
-                    <div class="name-tagline flex flex-col gap-6 text-center sm:text-left md:text-center">
-                        <h1 class="font-black text-3xl sm:text-3xl md:text-5xl text-purple-500">
-                            <span>Santosh Sahebrao Deshmukh</span><br>
-                        </h1>
-                        <p class="italic text-white bg-orange-400 sm:text-white sm:font-medium sm:text-base">
-                            Owner
-                        </p>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-            <div class="panti">
-                <video autoplay muted loop class="bg-video">
-                    <source src="/audio/panti.mp4" type="video/mp4">
+                <!-- Background Video -->
+                <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+                    <source src="/audio/diwaligreet.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
 
+                <!-- Foreground Content -->
+                <img src="/images/mypic.jpg" alt="my photo" class="w-40 sm:w-52 md:w-64 rounded-[20%]">
+
+                <div class="name-tagline flex flex-col gap-6 text-center sm:text-left">
+                    <h1 class="font-black text-3xl sm:text-3xl md:text-5xl text-purple-500">
+                        <span>Santosh Sahebrao Deshmukh</span><br>
+                    </h1>
+                    <p class="italic text-white bg-orange-400 sm:text-white sm:font-medium sm:text-base">
+                        Owner
+                    </p>
+                </div>
 
             </div>
-
 
 
             <div class="video-container border-purple-2px">
@@ -161,8 +123,8 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-
-
+            
+    
 
 
         </section>
