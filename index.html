@@ -79,25 +79,76 @@
 
             <li><a href="#services" class="nav-anchor hover:text-purple-600">Service</a></li>
             <li><a href="#partners" class="nav-anchor hover:text-purple-600">Partners</a></li>
-             <li><a href="#jobs" class="nav-anchor hover:text-purple-600">Jobs</a></li>
+            <li><a href="#jobs" class="nav-anchor hover:text-purple-600">Jobs</a></li>
             <li><a href="#contacts" class="nav-anchor hover:text-purple-600">Contact</a></li>
-           
+
         </ul>
     </nav>
 
     <!-- ✅ Main Content -->
     <main>
         <section id="home">
-            <div class="flex flex-col md:flex-row gap-10 md:gap-20 p-5 md:p-20 items-center">
-                <img src="/images/mypic.jpg" alt="my photo" class="w-40 sm:w-52 md:w-64 rounded-[20%]">
-                <div class="name-tagline flex flex-col gap-6 text-center sm:text-left">
-                    <h1 class="Santosh Sahebrao Deshmukh font-black text-3xl sm:text-3xl md:text-5xl text-purple-500">
-                        <span class="">Santosh Sahebrao Deshmukh</span><br>
-                    </h1>
-                    <p class="italic text-[white] bg-orange-400 sm:text-white sm:font-medium sm:text-base">
-                        Owner
-                    </p>
+
+            <div class="diwali_home flex flex-col md:flex-row justify-center items-center gap-10 p-5 md:p-10
+            bg-gradient-to-tr from-[#FF6B35] via-[#FFD93D] via-[#FF4E50] to-[#6A0DAD] rounded-xl">
+   
+
+
+                
+                <div
+                    class="relative flex flex-col md:flex-row gap-10 md:gap-20 p-5 md:p-20 items-center overflow-hidden">
+
+                    <!-- Background Video -->
+                    <video autoplay loop muted playsinline
+                        class="absolute top-0 left-0 w-full h-full object-contain z-10">
+                        <source src="/audio/flower.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+
+                    <img src="/images/mypic.jpg" alt="my photo"
+                        class="hideen_but_space w-40 sm:w-52 md:w-64 rounded-[20%]">
+
+                    <div class="hideen_but_space name-tagline flex flex-col gap-6 text-center sm:text-left">
+                        <h1 class="font-black text-3xl sm:text-3xl md:text-5xl text-purple-500">
+                            <span>Santosh Sahebrao Deshmukh</span><br>
+                        </h1>
+                        <p class="italic text-white bg-orange-400 sm:text-white sm:font-medium sm:text-base">
+                            Owner
+                        </p>
+                    </div>
+
+
                 </div>
+
+                <div
+                    class="flex flex-row md:flex-col gap-10 md:gap-20 p-5 md:p-20 align-center items-center overflow-hidden">
+
+
+                    <img src="/images/mypic.jpg" alt="my photo"
+                        class="w-40 sm:w-52 md:w-64 rounded-[20%]">
+
+                    <div class="name-tagline flex flex-col gap-6 text-center sm:text-left md:text-center">
+                        <h1 class="font-black text-3xl sm:text-3xl md:text-5xl text-purple-500">
+                            <span>Santosh Sahebrao Deshmukh</span><br>
+                        </h1>
+                        <p class="italic text-white bg-orange-400 sm:text-white sm:font-medium sm:text-base">
+                            Owner
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="panti">
+                <video autoplay muted loop class="bg-video">
+                    <source src="/audio/panti.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
 
             </div>
 
@@ -110,11 +161,15 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            </div>
+
+
+
+
+        </section>
 
     </main>
 
-    </section>
+
 
     <section id="services" class="p-2 pt-4 md:p-16 md:pt-0">
 
@@ -270,12 +325,12 @@
     </section>
 
 
-    <section id="jobs"  class="bg-white  overflow-hidden px-4 md:px-24">
+    <section id="jobs" class="bg-white  overflow-hidden px-4 md:px-24">
 
 
         <marquee class="mt-20 bg-purple-400 text-white font-black p-2">
-            <span class="flicker">|| We are looking for the  !! Retailers !! Promotors !! sellers ||</span>
-            <span class="flicker ml-6">|| Contact us on the  !! phone !! whatsapp !! email ||</span>
+            <span class="flicker">|| We are looking for the !! Retailers !! Promotors !! sellers ||</span>
+            <span class="flicker ml-6">|| Contact us on the !! phone !! whatsapp !! email ||</span>
             <span class="flicker ml-6">|| earn !! best !! live !! best ||</span>
         </marquee>
 
@@ -300,12 +355,12 @@
                 <p class="text-center">Sellesmen</p>
             </div>
 
-             <div class="flex flex-col bg-white border-[2px] justify-center py-10 pt-12  items-center gap-10">
+            <div class="flex flex-col bg-white border-[2px] justify-center py-10 pt-12  items-center gap-10">
                 <img src="/images/sellswomen.png" class="w-32  object-contain">
                 <p class="text-left">Selleswomen</p>
             </div>
 
-            
+
         </div>
 
 
@@ -315,7 +370,7 @@
     </section>
 
 
-        <section id="contacts" class="mt-8">
+    <section id="contacts" class="mt-8">
         <footer id="con-footer" class="bg-[#d4d2d6] pb-4">
             <div class="p-16 bg-[#d4d2d6] pb-4 sm:p-32 sm:pb-8 sm:bg-[#d4d2d6]">
                 <div class="flex flex-col gap-8 sm:flex sm:flex-row sm:justify-evenly sm:gap-16">
@@ -331,14 +386,11 @@
                         <div class="foot-section">
                             <h3 class="text-[#CA8A04] font-bold">Support</h3>
                             <ul class="foot-list font-medium text-[#c221ed]">
-                                <li><a href="/foot-doc/terms.html"
-                                        class="foot-link ">Terms & Conditions</a></li>
+                                <li><a href="/foot-doc/terms.html" class="foot-link ">Terms & Conditions</a></li>
                                 <li><a href="mailto:shubhamdeshmukhs741@gmail.com?subject=Bug Report or Feature Suggestion&body=Hi Shubham,%0D%0A%0D%0AI would like to report an issue or suggest a new feature:%0D%0A%0D%0A[Write your message here]%0D%0A%0D%0ARegards,%0D%0A[Your Name]"
                                         target="_blank" class="foot-link">Report an Issue / Suggest a Feature</a></li>
-                                <li><a href="/foot-doc/access.html"
-                                        class="foot-link">Accessibility Statement</a></li>
-                                <li><a href="/foot-doc/privacy.html"
-                                        class="foot-link">Privacy Statement</a></li>
+                                <li><a href="/foot-doc/access.html" class="foot-link">Accessibility Statement</a></li>
+                                <li><a href="/foot-doc/privacy.html" class="foot-link">Privacy Statement</a></li>
                             </ul>
                         </div>
                     </div>
@@ -349,8 +401,8 @@
                             <ul class="foot-list font-medium text-[#c221ed]">
                                 <li><a href="index.html" class="foot-link">Home</a></li>
                                 <li><a href="#services" class="foot-link">Service</a></li>
-                                 <li><a href="#partners" class="foot-link">Partners</a></li>
-                                  <li><a href="#contacts" class="foot-link">Contact</a></li>
+                                <li><a href="#partners" class="foot-link">Partners</a></li>
+                                <li><a href="#contacts" class="foot-link">Contact</a></li>
                             </ul>
                         </div>
                         <div class="foot-section flex flex-col gap-3">
@@ -361,7 +413,8 @@
                                         <img src="images/call.png" class="w-8 inline">+91 9422901358
                                     </li>
                                     <li><img src="images/whatsapp.png" class="w-8 inline">+91 9834791538</li>
-                                    <li><img src="/images/email.png" class="w-8 inline">santoshdeshmukh741@gmail.com</li>
+                                    <li><img src="/images/email.png" class="w-8 inline">santoshdeshmukh741@gmail.com
+                                    </li>
                                 </ul>
                             </div>
                         </div>
