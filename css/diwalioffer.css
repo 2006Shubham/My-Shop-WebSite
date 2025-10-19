@@ -1,0 +1,63 @@
+/* 🌆 Background theme — Deep Diwali violet + golden glow */
+.bg-diwali {
+  background: radial-gradient(circle at top right, #3e0063, #120022 70%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✨ Decorative glowing dots (like rangoli + fairy lights) */
+.decoration-overlay {
+  background-image:
+    radial-gradient(circle, rgba(255, 215, 0, 0.6) 1px, transparent 2px),
+    radial-gradient(circle, rgba(255, 105, 180, 0.6) 1px, transparent 2px),
+    radial-gradient(circle, rgba(0, 255, 170, 0.6) 1px, transparent 2px);
+  background-size: 80px 80px, 100px 100px, 120px 120px;
+  animation: sparkleShift 6s linear infinite;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+/* 🪔 Subtle glowing frame effect */
+.bg-diwali::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 3px dashed rgba(255, 215, 0, 0.6);
+  border-radius: 20px;
+  filter: drop-shadow(0 0 15px #ffd700);
+  z-index: 1;
+  animation: borderGlowNew 4s ease-in-out infinite alternate;
+}
+
+/* Keyframes */
+@keyframes sparkleShift {
+  0% { background-position: 0 0, 50px 50px, 100px 100px; }
+  100% { background-position: 100px 100px, 0 0, 50px 50px; }
+}
+
+@keyframes borderGlowNew {
+  0% { filter: drop-shadow(0 0 10px #ffd700); }
+  100% { filter: drop-shadow(0 0 25px #ff8c00); }
+}
+
+/* Responsive Typography Scaling */
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+p, button, div {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  p { font-size: 1rem; }
+  .bg-diwali::before { border-width: 2px; }
+}
+
+@media (min-width: 769px) {
+  h1 { font-size: 3.5rem; }
+  p { font-size: 1.4rem; }
+}
