@@ -73,7 +73,7 @@
     </header>
 
     <!-- ✅ Sticky Navbar -->
-    <nav class="sticky top-0 w-full  bg-gray-200 shadow-md z-50">
+    <nav class="sticky top-0 w-full  bg-gray-200 shadow-md z-50 diwali-border2">
         <ul class="flex flex-wrap justify-center gap-4 py-3 text-lg font-semibold sm:gap-8 sm:py-4">
             <li><a href="index.html" class="nav-anchor hover:text-purple-600">Home</a></li>
 
@@ -92,7 +92,9 @@
             <source src="/audio/flower.mp4" type="video/mp4">
         </video>
 
-        <section id="home">
+        <section  id="home" class="p-2 pt-4 md:p-16 md:pt-0 mt-12">
+
+            <div class="diwali-border">
             <div class="relative flex flex-col md:flex-row gap-10 md:gap-20 p-5 md:p-20 items-center overflow-hidden">
 
                 <!-- Background Video -->
@@ -123,7 +125,7 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            
+            </div>
     
 
 
@@ -145,7 +147,7 @@
         <h1 class="pl-5 text-[35px] md:pl-10 md:text-[35px] pt-12">Our Services</h1>
 
         <div
-            class="w-full  grid grid-cols-1 gap-6 p-5  md:w-full md:grid md:grid-cols-3 md:gap-10 md:p-10 text-orange-400 font-semibold">
+            class=" diwali-border w-full  grid grid-cols-1 gap-6 p-5  md:w-full md:grid md:grid-cols-3 md:gap-10 md:p-10 text-orange-400 font-semibold">
 
             <div class="flex flex-col bg-white border-[2px] justify-center items-center gap-10 py-10 px-2">
                 <img src="/images/recharge.jpeg" class="w-30 rounded-full">
@@ -174,7 +176,7 @@
                 <p class="text-center">Mobile-Jio Phones</p>
             </div>
 
-            <div class="flex flex-col bg-white border-[2px] justify-center items-center gap-10 py-10 px-2">
+            <div  class="flex flex-col bg-white border-[2px] justify-center items-center gap-10 py-10 px-2">
                 <img src="/images/kirana.png" class="w-36">
                 <p class="text-center">Kirana</p>
             </div>
@@ -203,7 +205,7 @@
 
         <h1 class="pl-5 text-[35px] md:pl-4 md:text-[35px] pt-12">Our Partners</h1>
 
-        <div class="relative overflow-x-auto scrollbar-hide pt-10"> <!-- Hide scrollbar -->
+        <div class="diwali-border relative overflow-x-auto scrollbar-hide pt-10"> <!-- Hide scrollbar -->
             <div class="flex gap-6 whitespace-nowrap animate-slide">
 
                 <!-- Airtel -->
@@ -258,6 +260,7 @@
         </div>
 
 
+
         <div class="flex justify-left items-center">
             <div>
                 <img src="/images/airtelcup.png" alt="Airtel Cup" class="w-56" />
@@ -290,7 +293,7 @@
     <section id="jobs" class="bg-white  overflow-hidden px-4 md:px-24">
 
 
-        <marquee class="mt-20 bg-purple-400 text-white font-black p-2">
+        <marquee class=" mt-20 bg-purple-400 text-white font-black p-2">
             <span class="flicker">|| We are looking for the !! Retailers !! Promotors !! sellers ||</span>
             <span class="flicker ml-6">|| Contact us on the !! phone !! whatsapp !! email ||</span>
             <span class="flicker ml-6">|| earn !! best !! live !! best ||</span>
@@ -299,7 +302,7 @@
         <h1 class="pl-5 text-[35px] md:pl-10 md:text-[35px] pt-12">Jobs we offer</h1>
 
         <div
-            class="w-full  grid grid-cols-1 gap-6 p-5  md:w-full md:grid md:grid-cols-3 md:gap-10 md:p-10 text-orange-400 font-semibold">
+            class=" diwali-border w-full  grid grid-cols-1 gap-6 p-5  md:w-full md:grid md:grid-cols-3 md:gap-10 md:p-10 text-orange-400 font-semibold">
 
             <div class="flex flex-col bg-white border-[2px] justify-center items-center gap-10 py-10 px-2">
                 <img src="/images/promotors.png" class="w-32 rounded-full">
@@ -408,7 +411,7 @@
             if (window.scrollY > 320) {
                 nav.classList.add('shadow-lg', 'bg-[#E6DEE0]');
                 navanchor.forEach(element => {
-                    element.classList.add('text-orange-400', 'font-black');
+                    element.classList.add('text-black', 'font-black');
                 });
 
             } else {
