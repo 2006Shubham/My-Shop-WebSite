@@ -171,3 +171,40 @@ body{
 .profile{
       background: linear-gradient(135deg, #2e0249, #ff512f, #f09819);
 }
+
+
+.diwali-offer{
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffeb3b;
+  transition: transform 0.3s ease, color 0.3s ease;
+  animation: discoColors 2s linear infinite;
+}
+
+.diwali-offer:hover {
+  transform: scale(1.2);
+}
+
+/* Disco Color Animation */
+@keyframes discoColors {
+  0%   { color: white; }
+  10%  { color: #ff9900; }
+  20%  { color: #ffff00; }
+  30%  { color: #33ff00; }
+  40%  { color: white; }
+  50%  { color: #0066ff; }
+  60%  { color: #9900ff; }
+
+  70%  { color: white; }
+  80%  { color: #ff3366; }
+  90%  { color: #ffcc00; }
+  100% { color: white; }
+}
+
+/* Optional: Smooth shrink-grow hover effect */
+.diwali-offer:hover {
+  animation: discoColors 1s linear infinite;
+  transform: scale(1.3);
+}

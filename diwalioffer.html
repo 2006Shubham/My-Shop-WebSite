@@ -3,11 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/css/diwalioffer.css" rel="stylesheet"></link>
+    <title>Deshmukh-Kirana & Telecom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/homestyle.css">
+    <link rel="stylesheet" href="/css/diwalioffer.css">
+
+
+    <style>
+        .flicker {
+            animation: flicker 1.5s infinite;
+        }
+
+        @keyframes flicker {
+
+            0%,
+            19%,
+            21%,
+            23%,
+            25%,
+            54%,
+            100% {
+                opacity: 1;
+            }
+
+            20%,
+            22%,
+            24%,
+            55% {
+                opacity: 0.4;
+            }
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-slide {
+            animation: slide 25s linear infinite;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+
 </head>
-<body><!-- Diwali Offer Marathi Section -->
+<body>
+    
+    <!-- ✅ Sticky Navbar -->
+    <nav class="sticky top-0 w-full  bg-gray-200 shadow-md z-50 diwali-border2">
+        <ul class="flex flex-wrap justify-center gap-4 py-3 text-lg font-semibold sm:gap-8 sm:py-4">
+            <li><a href="index.html" class="nav-anchor hover:text-purple-600">Home</a></li>
+
+            <li><a href="#services" class="nav-anchor hover:text-purple-600">Service</a></li>
+            <li><a href="#partners" class="nav-anchor hover:text-purple-600">Partners</a></li>
+            <li><a href="#jobs" class="nav-anchor hover:text-purple-600">Jobs</a></li>
+            <li><a href="#contacts" class="nav-anchor hover:text-purple-600">Contact</a></li>
+
+        </ul>
+    </nav>
+
+
+    <!-- Diwali Offer Marathi Section -->
 <!-- Diwali Offer Marathi Section -->
 <section class="relative flex flex-col md:flex-row items-center justify-center min-h-screen text-white px-6 py-10 bg-diwali">
   
